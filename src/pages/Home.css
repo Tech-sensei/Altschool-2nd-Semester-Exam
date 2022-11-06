@@ -1,0 +1,30 @@
+.home {
+    height: 100vh;
+}
+
+.home__container {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.home__container--contents {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+@media screen and (min-width: 968px) {
+    .home__container {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .home__container--contents {
+        width: calc(100% - 250px)
+    }
+
+    .home__container--contents h2 {
+        /* font-size: 3rem; */
+        margin-bottom: 2rem;
+    }
+}
